@@ -1,0 +1,232 @@
+$color: #CDAF6E;
+
+
+.header{
+    background: #1C1C1C;
+}
+.main{
+    width: 1100px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.search-wrap{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 48px;
+
+    .search-input{
+        border:2px solid $color;
+    }
+}
+
+
+.filter-wrap{
+    padding: 0 28px 0;  
+    padding-bottom: 22px;
+    background: #F9F9F9;
+    margin-top: 40px;
+    border-radius:4px 4px 0px 4px;
+    position: relative;
+
+    dt{
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .filter-list{
+        overflow: hidden;
+        
+        dl{
+            overflow: hidden;
+            padding-top: 24px;
+            position: relative;
+            box-sizing: border-box;
+            padding-right: 70px;
+            height: 48px;
+            
+            dt,dd{
+                float: left;
+            }
+
+            dt{
+                margin-right: 50px;
+            }
+
+            dd{
+                font-size:14px;
+                color: #1C1C1C;
+                margin-right: 40px;
+                line-height: 22px;
+                
+                &.price-form-dd{
+                    color: #666;
+
+                    .input-text{
+                        width:78px;
+                        height:24px;
+                        border-radius:2px;
+                        border:1px solid #CCC;
+                        outline: none;
+                        box-sizing: border-box;
+                        padding-left: 10px;
+                    }
+
+                    span{
+                        padding: 0 10px;
+                    }
+                }
+            }
+
+            .more{
+                position: absolute;
+                right: 0;
+                top: 25px;
+                cursor: pointer;
+                color: #666;
+                margin-right: 0;
+                
+                img{
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .selected-list{
+        border-top:1px solid #bbb;
+        margin-top: 20px;
+        padding-top: 18px;
+        
+        dl{
+            overflow: hidden;
+            
+            dt,dd{
+                float: left;
+            }
+            dt{
+                margin-right: 40px;
+                line-height: 28px;
+            }   
+            dd{
+                height:26px;
+                line-height:26px;
+                border:1px solid $color;
+                border-radius:4px;
+                padding: 0 26px 0 10px;
+                margin-right: 20px;
+                position: relative;
+                font-size:14px;
+                color: $color;
+                font-weight: bold;
+            }
+        }
+
+        .close{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            z-index: 2;
+            cursor: pointer;
+        }
+    }
+    
+    .switch{
+        position: absolute;
+        bottom: -26px;
+        right: 0;
+        width:70px;
+        height:26px;
+        line-height:26px;
+        color: $color;
+        font-weight: 700;
+        text-align: center;
+        background: #eee;
+
+        img{
+            vertical-align: sub;
+            margin-left: 6px;
+        }
+
+        &[data-off="0"] img{
+            transform: rotate(180deg);
+            transition: .4s;
+        }
+    }
+}
+
+.hot-brand-wrap{
+    margin-top: 50px;
+    overflow: hidden;
+
+    .wrap-top{
+        border-left:5px solid $color;
+        padding-left: 10px;
+        margin-bottom: 25px;
+    
+        h3{
+          font-size:22px;
+          color: $color;
+          font-weight: 500;
+        }
+    }
+
+    li{
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 30px;
+
+        &:nth-child(5n){
+            margin-right: 0;
+        }
+
+        .img{
+            width:206px;
+            height:224px;
+            line-height:206px;
+            border:1px solid #ddd;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .name{
+            font-size:18px;
+            color: #333;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+.guitar-list{
+    margin-top: 72px;
+     overflow: hidden;
+
+    li{
+        float: left;
+        width: 208px;
+        overflow: hidden;
+        margin-right: 15px;
+        margin-bottom: 30px;
+
+        &:nth-child(5n){
+            margin-right: 0;
+        }
+
+        .name{
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+
+        .price{
+            font-size:16px;
+            color: $color;
+        }
+    }
+}

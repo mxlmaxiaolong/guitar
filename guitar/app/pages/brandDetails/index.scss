@@ -1,0 +1,186 @@
+$color: #CDAF6E;
+
+
+.header{
+    background: #1C1C1C;
+}
+.main{
+    width: 1100px;
+    margin: auto;
+    margin-top: 150px;
+}
+.title{
+    font-size:30px;
+    color: #1C1C1C;
+}
+
+.search-wrap{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 48px;
+
+    .search-input{
+        border:2px solid $color;
+    }
+}
+
+.wrap-top{
+    border-left:5px solid $color;
+    padding-left: 10px;
+    margin-bottom: 25px;
+
+    h3{
+        font-size:22px;
+        color: $color;
+        font-weight: 500;
+    }
+}
+
+.story-wrap{
+    margin-top: 50px;
+
+    .describe{
+        font-size:18px;
+        color: #333;
+        line-height: 30px;
+    }
+    .mg-top{
+        margin-top: 20px;
+    }
+}
+
+.video-list{
+    margin-top: 70px;
+    padding-bottom: 5px;
+    overflow: hidden;
+
+    li{
+        width:356px;
+        height:200px;
+        position: relative;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+        
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: .4);
+        }
+
+        .play{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width:80px;
+            height:80px;
+            line-height:80px;
+            border:1px solid #999;
+            text-align: center;
+            border-radius: 50%;
+
+            img{
+                position: relative;
+                top: 13px;
+                width: 38px;
+            }
+        }
+    }
+}
+
+.guitar-list{
+    margin-top: 40px;
+     overflow: hidden;
+
+    li{
+        float: left;
+        width: 208px;
+        overflow: hidden;
+        margin-right: 15px;
+        margin-bottom: 30px;
+
+        &:nth-child(5n){
+            margin-right: 0;
+        }
+
+        .name{
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+
+        .price{
+            font-size:16px;
+            color: $color;
+        }
+    }
+}
+
+.nearby-dealer-list{
+    overflow: hidden;
+
+    li{
+        float: left;
+        position: relative;
+        margin-right: 76px;
+        
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+
+        .img{
+            margin-right: 15px;
+        }
+        .info-div{
+            width:357px;
+            height:162px;
+            border:1px solid #ddd;
+            box-sizing: border-box;
+            padding: 0 20px;
+            color: #1C1C1C;
+
+            .name{
+                font-size:18px;
+                margin-top: 20px;
+                font-weight: 700;
+            }
+
+            .address{
+                font-size:16px;
+                margin-top: 16px;
+            }
+
+            .telephone{
+                @extend .address;
+                margin-top: 12px;
+
+            }
+
+        }
+
+        .location{
+            position: absolute;
+            top: 24px;
+            right: 14px;
+            font-size:16px;
+            color: #666;
+
+            img{
+                vertical-align: middle;
+            }
+        }
+    }
+}

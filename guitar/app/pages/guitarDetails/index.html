@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>吉他详情</title>
+
+    @layout(../../template/head.html)
+</head>
+
+<body>
+
+    @layout(../../template/header.html)
+
+    <section class="main">
+        <section class="guitar-wrap">
+            <div class="guitar-images fl">
+                <div class="preview" id="preview">
+                    <img width="510" height="336" src="https://img.alicdn.com/imgextra/i4/2094323899/TB13leZiXuWBuNjSspnXXX1NVXa_!!0-item_pic.jpg_430x430q90.jpg" alt="">
+                </div>
+                <div class="thumbs" id="thumbs">
+                    <ul>
+                        <li class="active">
+                            <img width="120" height="80" src="https://img.alicdn.com/imgextra/i4/2094323899/TB13leZiXuWBuNjSspnXXX1NVXa_!!0-item_pic.jpg" alt="">
+                        </l>
+                        <li>
+                            <img width="120" height="80" src="https://img.alicdn.com/imgextra/i2/2094323899/TB2cyxytpGWBuNjy0FbXXb4sXXa_!!2094323899.jpg"
+                                alt="">
+                        </li>
+                        <li>
+                            <img width="120" height="80" src="https://img.alicdn.com/imgextra/i3/2094323899/TB22a4tgOAnBKNjSZFvXXaTKXXa_!!2094323899.jpg"
+                                alt="">
+                        </li>
+                        <li>
+                            <img width="120" height="80" src="https://img.alicdn.com/imgextra/i4/2094323899/TB22KXIgLImBKNjSZFlXXc43FXa_!!2094323899.jpg"
+                                alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guitar-info fl">
+                <h2 class="name">Randon蓝盾 RG-540C</h2>
+                <div class="skus-box">
+                    <div class="sku-row">
+                        <p class="label">颜色</p>
+                        <ul class="sku-list">
+                            <li class="active">原木色</l>
+                            <li>复古色</li>
+                            <li>樱桃红</li>
+                            <li>日落色</li>
+                            <li>黑色</li>
+                        </ul>
+                    </div>
+                    <div class="sku-row">
+                        <p class="label">桶型</p>
+                        <ul class="sku-list">
+                            <li class="active">O桶</li>
+                            <li>A桶</li>
+                            <li>OM桶</li>
+                            <li>GC桶</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="label">参考价格</span>
+                    <strong class="num">¥ 6190</strong>
+                </div>
+                <!-- <button type="button" class="add-btn" > <img style="position: relative;top: 3px;left: -3px;" width="20" height="20" src="./../../images/icon/icon-add.png" alt="" > 添加到琴房</button> -->
+                <button type="button" class="add-btn" disabled="disabled"> <img style="position: relative;top: 3px;left: -3px;" width="20" height="20" src="./../../images/icon/icon-add.png" alt="" > 已添加</button>
+            </div>
+        </section>
+
+        <section class="comment-wrap">
+            <div class="wrap-top">
+                <h3>琴友口碑</h3>
+            </div>
+
+            <section class="search-wrap">
+                <form>
+                    <input type="text" id="searchInput" class="search-input" placeholder="说说你的想法吧...">
+                    <input type="submit" value="评论" class="submit-search-btn">
+                </form>
+            </section>
+        
+            <div class="comment-list">
+                <ul>
+                    <li>
+                        <div class="user">
+                            <img class="fl head" width="50" height="50" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=310698582,2573789846&fm=27&gp=0.jpg" alt="">
+                            <div class="fl">
+                                <p class="name">Angleababy</p>
+                                <p class="date">6月17日</p>
+                            </div>
+                        </div>
+                        <div class="content">感觉非常的赞这把吉他，吉他外观很好看，我选的是神秘的黑色，琴面喷漆都很好，很均匀，然后音质方面呢没有杂音，弦距也合适好按，做 工质量过关。</div>  
+                    </li>
+                    <li>
+                        <div class="user">
+                            <img class="fl head" width="50" height="50" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2695325062,2599797664&fm=27&gp=0.jpg"
+                                alt="">
+                            <div class="fl">
+                                <p class="name">Angleababy</p>
+                                <p class="date">6月17日</p>
+                            </div>
+                        </div>
+                        <div class="content">感觉非常的赞这把吉他，吉他外观很好看，我选的是神秘的黑色，琴面喷漆都很好，很均匀，然后音质方面呢没有杂音，弦距也合适好按，做 工质量过关。</div>
+                    </li>
+                    <li>
+                        <div class="user">
+                            <img class="fl head" width="50" height="50" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2977943341,1699576948&fm=27&gp=0.jpg"
+                                alt="">
+                            <div class="fl">
+                                <p class="name">蓝天白云配绿树</p>
+                                <p class="date">6月17日</p>
+                            </div>
+                        </div>
+                        <div class="content">感觉非常的赞这把吉他，吉他外观很好看，我选的是神秘的黑色，琴面喷漆都很好，很均匀，然后音质方面呢没有杂音，弦距也合适好按，做 工质量过关。</div>
+                    </li>
+                </ul>
+                <button type="button" class="view-more-btn">查看更多评论</button>
+            </div>
+
+        </section>
+
+        <!-- <section class="audition-wrap">
+
+        </section> -->
+
+        <section class="guitar-param">
+            <div class="wrap-top">
+                <h3>吉他参数</h3>
+            </div>
+
+            <table class="param-table" cellspacing="0">
+                <tr>
+                    <th>吉他名</td>
+                    <td>Eredar ED28</td>
+                    <th>型号</td>
+                    <td>ED28</td>
+                </tr>
+                <tr>
+                    <th>桶型</td>
+                    <td>D桶</td>
+                    <th>颜色</td>
+                    <td>原木色</td>
+                </tr>
+                <tr>
+                    <th>市场价</td>
+                    <td>6280</td>
+                    <th>尺寸</td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <th>面板材料</td>
+                    <td>英格曼单板3A</td>
+                    <th>背侧板</td>
+                    <td>印度玫瑰木单板A+</td>
+                </tr>
+                <tr>
+                    <th>琴颈</td>
+                    <td>非洲桃花心 14度一体</td>
+                    <th>颈形</td>
+                    <td>V/D渐变</td>
+                </tr>
+                <tr>
+                    <th>指板材料</td>
+                    <td>乌木</td>
+                    <th>指板宽度</td>
+                    <td>44mm-55.77mm</td>
+                </tr>
+                <tr>
+                    <th>油漆材料</td>
+                    <td>柄-PU323哑光漆/桶-PU高硬度亮光</td>
+                    <th>琴头贴面</td>
+                    <td>玫瑰木薄片</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="guitar-album">
+            <div class="wrap-top">
+                <h3>吉他图片</h3>
+            </div>
+
+            <div class="album-menu clearfix" id="albumMenu">
+                <ul>
+                    <li class="active">外观(10)</li>
+                    <li>细节(10)</li>
+                    <li>内部(10)</li>
+                    <li>官方相册(10)</li>
+                </ul>
+            </div>
+            <div class="album-images" id="albumImages">
+                <ul >
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2094323899/TB22KXIgLImBKNjSZFlXXc43FXa_!!2094323899.jpg_430x430q90.jpg" alt="">
+                        <p class="name">琴头</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i2/2094323899/TB2SA4MtuuSBuNjSsplXXbe8pXa_!!2094323899.jpg_430x430q90.jpg" alt="">
+                        <p class="name">指板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2094323899/TB22KXIgLImBKNjSZFlXXc43FXa_!!2094323899.jpg_430x430q90.jpg" alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2094323899/TB13leZiXuWBuNjSspnXXX1NVXa_!!0-item_pic.jpg_430x430q90.jpg" alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2094323899/TB22KXIgLImBKNjSZFlXXc43FXa_!!2094323899.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">琴头</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i2/2094323899/TB2SA4MtuuSBuNjSsplXXbe8pXa_!!2094323899.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">指板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2094323899/TB22KXIgLImBKNjSZFlXXc43FXa_!!2094323899.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2094323899/TB13leZiXuWBuNjSspnXXX1NVXa_!!0-item_pic.jpg_500x500q90.jpg"
+                            alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                </ul>
+                <ul style="display:none;">
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2995997371/TB2S.nOhgoQMeJjy0FpXXcTxpXa_!!2995997371.jpg"
+                            alt="">
+                        <p class="name">琴头</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2995997371/TB2cKKQom_I8KJjy0FoXXaFnVXa_!!2995997371.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">指板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i3/2995997371/TB2E_2whbsTMeJjy1zeXXcOCVXa_!!2995997371.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2995997371/TB2S.nOhgoQMeJjy0FpXXcTxpXa_!!2995997371.jpg"
+                            alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i2/3634275930/TB2PB2Fa_JYBeNjy1zeXXahzVXa_!!3634275930.png_430x430q90.jpg"
+                            alt="">
+                        <p class="name">琴头</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i1/2189304118/TB2ah02uHGYBuNjy0FoXXciBFXa_!!2189304118.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">指板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2189304118/TB2qDM5mlmWBuNkSndVXXcsApXa_!!2189304118.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                    <li>
+                        <img width="264" height="176" src="https://img.alicdn.com/imgextra/i4/2094323899/TB13leZiXuWBuNjSspnXXX1NVXa_!!0-item_pic.jpg_430x430q90.jpg"
+                            alt="">
+                        <p class="name">背侧板</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pagination">
+                <button type="button" disabled="disabled" class="btn-prev"> <img width="16" height="18" src="./../../images/icon/icon-arrow4.png" alt=""> </button>
+                <ul class="pager">
+                    <li class="number active"> <a href="#">1</a></li>
+                    <li class="number"> <a href="#">2</a></li>
+                    <li class="more">…</li>
+                    <li class="number"> <a href="#">3</a></li>
+                </ul>
+                <button type="button" class="btn-next"><img width="16" height="18" src="./../../images/icon/icon-arrow5.png" alt=""></button>
+            </div>
+        </section>
+
+        <section class="nearby-dealer-list">
+            <div class="wrap-top">
+                <h3>附近经销商</h3>
+            </div>
+
+            <ul>
+                <li>
+                    <div class="img fl">
+                        <img width="140" height="162" src="http://p0.meituan.net/deal/__40618744__3553076.jpg@213w_120h_1e_1c" alt="">
+                    </div>
+                    <div class="info-div fl">
+                        <p class="name">新顺路店</p>
+                        <p class="address">地址：广州市白云区白云大道北11689号岭南新世界1层101</p>
+                        <p class="telephone">电话：133 5658 9999</p>
+                    </div>
+                    <div class="location"> <span> 586米</span> <img width="24" height="24" src="./../../images/icon/icon-direction.png" alt=""> </div>
+                </li>
+                <li>
+                    <div class="img fl">
+                        <img width="140" height="162" src="http://p0.meituan.net/deal/__40618744__3553076.jpg@213w_120h_1e_1c" alt="">
+                    </div>
+                    <div class="info-div fl">
+                        <p class="name">新顺路店</p>
+                        <p class="address">地址：广州市白云区白云大道北11689号岭南新世界1层101</p>
+                        <p class="telephone">电话：133 5658 9999</p>
+                    </div>
+                    <div class="location">
+                        <span> 586米</span>
+                        <img width="24" height="24" src="./../../images/icon/icon-direction.png" alt=""> </div>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    @layout(../../template/footer.html)
+
+</body>
+
+</html>

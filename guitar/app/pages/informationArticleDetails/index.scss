@@ -1,0 +1,188 @@
+$color: #CDAF6E;
+
+
+.header{
+    background: #1C1C1C;
+}
+.main{
+    width: 810px;
+    margin: auto;
+    padding-top: 80px;
+    margin-top: 50px;
+}
+
+.title{
+  font-size:30px;
+  color: #1C1C1C;
+  padding-bottom: 20px;
+}
+
+.change-info{
+  overflow: hidden;
+  color: #666;
+  font-size:18px;
+  padding-bottom: 28px;
+
+  .head{
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .name{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size:18px;
+  }
+
+  .dot::after{
+    content: '';  
+    display: inline-block;
+    width:4px;
+    height:4px;
+    background:#666;
+    border-radius: 50%;
+    margin: 0 8px;
+    position: relative;
+    top: -4px;
+  }
+
+  .time{
+    margin-top:12px;
+  }
+  .view-num{
+    margin-top: 14px;
+
+    img{
+      margin-right: 6px;
+    }
+  }
+}
+
+.content{
+  font-size:18px;
+  color: #333;
+  line-height:30px;
+}
+
+.article-footer{
+  margin-top: 80px;
+  overflow: hidden;
+
+  .share{
+    font-size:18px;
+    color: #999;
+    img{
+      margin-right: 30px;
+      vertical-align: middle;
+    }
+  }
+
+  .operation{
+    
+    button{
+        background: #fff;
+        font-size:20px;
+        color: #666;
+        outline: none;
+        cursor: pointer;
+
+        img{
+          vertical-align: bottom;
+          margin-right: 12px;
+        }
+
+        &.good{
+          margin-right: 50px;
+        }
+    }
+  }
+}
+
+.top{
+  border-left:5px solid $color;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  line-height: 24px;
+
+  .tips{
+    font-size:18px;
+    color: $color;
+  }
+
+  h3,a{
+    font-size:22px;
+    color: $color;
+  }
+
+  .refresh{
+    background: #fff;
+    float: right;
+    cursor: pointer;
+    padding-top: 4px;
+    margin-right: 10px;
+    outline: none;
+
+    img{
+      vertical-align: bottom;
+      margin-right: 10px;
+    }
+  }
+}
+
+.section-item{
+  width: 1110px;
+  margin: auto;
+  margin-top: 70px;
+  padding-top: 30px;
+  border-top:1px solid #DDD;
+
+  .content-wrap {
+    overflow: hidden;
+
+    li{
+      width:357px;
+      overflow: hidden;
+      float: left;
+      margin-right: 18px;
+      margin-bottom: 30px;
+      position: relative;
+
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+
+    .describe{
+      font-size:14px;
+      color: #666;
+      line-height:20px;
+    }
+
+    .title{
+      font-size:18px; 
+      color: #333;
+      margin-top: 12px; 
+      padding-bottom:4px;
+    }
+
+    .user{
+      margin-top: 12px;
+      
+      .head{
+        width:28px;
+        height:28px;
+        border-radius: 50%;
+      }
+
+      .name{
+        font-size:14px;
+        color: #333;
+        vertical-align: top;
+        position: relative;
+        top: 5px;
+        margin-left: 8px;
+      }
+    }
+  }
+  
+}

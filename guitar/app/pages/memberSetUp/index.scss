@@ -1,0 +1,106 @@
+$color: #CDAF6E;
+
+
+.header{
+    background: #1C1C1C;
+}
+.main{
+    width: 800px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+
+.upload-head{
+    overflow: hidden;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    margin-top: 140px;
+    
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width:40px;
+        height:34px;
+        background: url(./../../images/icon/icon-camera.png) no-repeat center;
+        z-index: 1;
+    }
+}
+
+.datum-list{
+    padding-top: 70px;
+
+    h2{
+        font-size:22px;
+        color: #333;
+        line-height: 46px;
+    }
+
+    .item{
+        border-bottom:1px solid #DDD;
+        padding: 56px 0 20px;
+        line-height: 44px;
+        overflow: hidden;
+
+        .pd-right-20{
+            padding-right: 20px;
+        }
+
+        .label{
+            font-size:20px;
+            color: #666;
+
+            span{
+                padding-left: 15px;
+            }
+        }
+        .value{
+            font-size:20px;
+            color: #1C1C1C;
+            padding-left: 40px;
+
+            &.no{
+                color: #FB6E3A;
+            }
+        }
+        .operation-btn{
+            float: right;
+            width:120px;
+            height:46px;
+            background: $color;
+            border-radius:2px;
+            color: #fff;
+            font-size:20px;
+            cursor: pointer;
+
+            &.defalt{
+                background: none;
+                border: 1px solid $color;
+                color: $color;
+            }
+        }
+    }
+}
+
+.modal-popup{
+    height:440px;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>视频详情</title>
+
+    @layout(../../template/head.html)
+</head>
+
+<body>  
+
+    @layout(../../template/header.html)
+
+    <section class="main">
+        <section class="video-wrap">
+            <div class="play-video  fl">
+                <video id="video" class="video-js vjs-default-skin" controls preload="auto" width="889" height="502" poster="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1533305780583&di=bf8b1bf912ad65a3d320fd142e30da66&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn%2Fw640h347%2F20180121%2Fd7e2-fyqtwzv5133582.jpg"
+                    data-setup='{"example_option":true}'>
+                    <source src="https://aliblog-1254407033.cos.ap-guangzhou.myqcloud.com/85EF01609B039DB41FB36CFB4A40EE29.mp4" type='video/mp4' />
+                </video>
+                <section class="article-footer">
+                    <div class="operation fl">
+                        <button type="button" class="good"><img width="28" src="./../../images/icon/icon-good.png" alt="">点赞</button>
+                        <button type="button" class="collect"><img width="28" src="./../../images/icon/icon-collect2-n.png" alt="">收藏</button>
+                    </div>
+
+                    <div class="share fl">
+                        <span>分享至：</span>
+                        <a href="#">
+                            <img src="./../../images/icon/icon-QQ2.png" alt="">
+                        </a>
+                        <img class="wx-share" src="./../../images/icon/icon-wx2.png" alt="">
+                        <!-- <div class="wx-share-hover">
+                            <img src="./../../images/2018-08-02-1728244092.png" alt="">
+                        </div> -->
+                    </div>
+                </section>
+            </div>
+
+            <div class="video-list fl">
+                <p class="title">系列课程</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="img" width="180" height="100" src="http://p1.music.126.net/ii5426HIw3wG_hnoRm1Ojg==/109951162797223607.jpg?param=180y100" alt="">
+                            <p class="name">吉他系列教学第一课</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img" width="180" height="100" src="http://p1.music.126.net/PqVvrGBVsqUGPJznUdfieA==/109951163428268389.jpg?param=180y100" alt="">
+                            <p class="name">吉他系列教学第二课</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img" width="180" height="100" src="http://p1.music.126.net/lwzFT4e_hO_H5tWJ_tgF7w==/109951163430090416.jpg?param=180y100" alt="">
+                            <p class="name">吉他系列教学第三课</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img" width="180" height="100" src="http://p1.music.126.net/oS3ZLQ66uGPMnnOJDzDlBw==/19093019417022416.jpg?param=180y100" alt="">
+                            <p class="name">吉他系列教学第四课</p>
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="change-info">
+            <h1 class="title">新手用什么吉他？初学者入门吉他推荐</h1>
+            <img class="head fl" width="40" src="http://p4.music.126.net/38yIb-71lSD8m5_FTQNmNA==/109951163432626976.jpg?param=40y40" alt="">
+            <p class="name fl">蓝天绿树配白云</p>
+            <div class="tags fl"><span>#演奏</span></div>
+            <p class="time fl dot">2017年7月30日</p>
+            <div class="view-num">
+                <img width="18" src="./../../images/icon/icon-visit.png" alt="">2,340
+            </div>
+        </section>
+
+        <section class="section-item">
+            <section class="top">
+                <h3 class="fl"> 相关推荐</h3>
+                <button type="button" class="refresh"> <img width="14" height="14" src="./../../images/icon/icon-refresh.png" alt=""> 换一换</button>
+            </section>
+
+             <section class="content-wrap">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="img" src="http://p1.music.126.net/FEqWDhatvfm-50OPudgebQ==/109951163416746096.jpg?param=264y149" alt="">
+                            <div class="title text-ellipsis">鲸云音效与女声产生的独特反应(迷幻电音)</div>
+                            <i class="icon-video">
+                                <img src="./../../images/icon/icon-video.png" width="18" height="16" alt="">
+                            </i>
+                        </a>
+
+                        <div class="change clearfix">
+                            <div class="tags fl">
+                                <span>#演奏</span>
+                            </div>
+                            <div class="visit fl">
+                                <img class="icon-arrow" src="./../../images/icon/icon-visit.png" width="16" height="16" alt="">
+                                <span class="num">2,340</span>
+                            </div>
+                        </div>
+
+                        <div class="user">
+                            <img class="head" src="http://p1.music.126.net/eEfM26LUc-YTXjRVhBWF-w==/109951163389210259.jpg?param=28y28" alt="">
+                            <span class="name">小凡</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img" src="http://p1.music.126.net/oS3ZLQ66uGPMnnOJDzDlBw==/19093019417022416.jpg?param=264y149" alt="">
+                            <div class="title text-ellipsis">「故事碎片」想念在耳边凝成絮语</div>
+                            <i class="icon-video">
+                                <img src="./../../images/icon/icon-video.png" width="18" height="16" alt="">
+                            </i>
+                        </a>
+                    
+                        <div class="change clearfix">
+                            <div class="tags fl">
+                                <span>#演奏</span>
+                            </div>
+                            <div class="visit fl">
+                                <img class="icon-arrow" src="./../../images/icon/icon-visit.png" width="16" height="16" alt="">
+                                <span class="num">2,340</span>
+                            </div>
+                        </div>
+                    
+                        <div class="user">
+                            <img class="head" src="http://p1.music.126.net/WWdqudCqS1qINe7VWcLoWg==/18724683023217800.jpg?param=28y28" alt="">
+                            <span class="name">小凡</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img" src="http://p1.music.126.net/6t3Uc4m5gq2u19bRb__vMQ==/109951163410578006.jpg?param=264y149" alt="">
+                            <div class="title text-ellipsis">论如何优雅的让你知道我想你</div>
+                            <i class="icon-video">
+                                <img src="./../../images/icon/icon-video.png" width="18" height="16" alt="">
+                            </i>
+                        </a>
+                    
+                        <div class="change clearfix">
+                            <div class="tags fl">
+                                <span>#演奏</span>
+                            </div>
+                            <div class="visit fl">
+                                <img class="icon-arrow" src="./../../images/icon/icon-visit.png" width="16" height="16" alt="">
+                                <span class="num">2,340</span>
+                            </div>
+                        </div>
+                    
+                        <div class="user">
+                            <img class="head" src="http://p1.music.126.net/WWdqudCqS1qINe7VWcLoWg==/18724683023217800.jpg?param=28y28" alt="">
+                            <span class="name">小凡</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img" src="http://p1.music.126.net/vQRsfQZkDcMLzGdJImZvRQ==/109951163424132892.jpg?param=264y149" alt="">
+                            <div class="title text-ellipsis">一个人想你就会主动找你 没有例外</div>
+                            <i class="icon-video">
+                                <img src="./../../images/icon/icon-video.png" width="18" height="16" alt="">
+                            </i>
+                        </a>
+                    
+                        <div class="change clearfix">
+                            <div class="tags fl">
+                                <span>#演奏</span>
+                            </div>
+                            <div class="visit fl">
+                                <img class="icon-arrow" src="./../../images/icon/icon-visit.png" width="16" height="16" alt="">
+                                <span class="num">2,340</span>
+                            </div>
+                        </div>
+                    
+                        <div class="user">
+                            <img class="head" src="http://p1.music.126.net/WWdqudCqS1qINe7VWcLoWg==/18724683023217800.jpg?param=28y28" alt="">
+                            <span class="name">小凡</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+    @layout(../../template/footer.html)
+
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>吉他数据库</title>
+
+    @layout(../../template/head.html)
+</head>
+
+<body>
+
+    @layout(../../template/header.html)
+
+    <section class="main">
+        <section class="search-wrap" id="searchWrap">
+            <div class="center">
+                <form>
+                    <input type="text" id="searchInput" class="search-input" placeholder="吉他产品数据、精彩视频、曲谱、资讯…">
+                    <input type="submit" value="搜索" class="submit-search-btn">
+        
+                    <div class="search-box">
+                        <div class="history">最近搜索</div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>你就不要想</span>
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>你就不要想</span>
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>你就不要想</span>
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="filter-wrap">
+            <div class="filter-list" id="filterList">
+                <dl>
+                    <dt>品牌</dt>
+                    <dd><a href="#">Randon蓝盾</a></dd>
+                    <dd><a href="#">YAMAHA雅马哈</a></dd>
+                    <dd><a href="#">Mayson曼森</a></dd>
+                    <dd><a href="#">Magic麦杰克</a></dd>
+                    <dd><a href="#">TYMA泰玛</a></dd>
+                    <dd><a href="#">LEGPAP莱柏</a></dd>
+                    <dd><a href="#">LAVA拿火</a></dd>
+                    <dd><a href="#">Randon蓝盾</a></dd>
+                    <dd><a href="#">YAMAHA雅马哈</a></dd>
+                    <dd><a href="#">Mayson曼森</a></dd>
+                    <dd><a href="#">Magic麦杰克</a></dd>
+                    <dd><a href="#">TYMA泰玛</a></dd>
+                    <dd><a href="#">LEGPAP莱柏</a></dd>
+                    <dd><a href="#">LAVA拿火</a></dd>
+                    
+                    <dd class="more" data-off="0">更多<img width="14" height="14" src="./../../images/icon/icon-arrow3.png" alt=""></dd>
+                </dl>
+                <dl>
+                    <dt>桶型</dt>
+                    <dd><a href="#">A桶</a></dd>
+                    <dd><a href="#">O桶</a></dd>
+                    <dd><a href="#">D桶</a></dd>
+                    <dd><a href="#">OM桶</a></dd>
+                    <dd><a href="#">GA桶</a></dd>
+                    <dd><a href="#">R桶</a></dd>
+                    <dd><a href="#">GC桶</a></dd>
+                    <dd><a href="#">AJ桶</a></dd>
+                    <dd><a href="#">Jumbo桶</a></dd>
+                    <dd><a href="#">MINI</a></dd>
+                </dl>
+                <dl>
+                    <dt>颜色</dt>
+                    <dd><a href="#">原木色</a></dd>
+                    <dd><a href="#">复古色</a></dd>
+                    <dd><a href="#">日落色</a></dd>
+                    <dd><a href="#">黑色</a></dd>
+                    <dd><a href="#">樱桃红</a></dd>
+                    <dd><a href="#">其他颜色</a></dd>
+                </dl>
+                <dl>
+                    <dt>产地</dt>
+                    <dd><a href="#">中国</a></dd>
+                    <dd><a href="#">德国</a></dd>
+                    <dd><a href="#">意大利</a></dd>
+                    <dd><a href="#">法国</a></dd>
+                </dl>
+                <dl>
+                    <dt>类型</dt>
+                    <dd><a href="#">合板</a></dd>
+                    <dd><a href="#">面背单</a></dd>
+                    <dd><a href="#">全单</a></dd>
+                    <dd><a href="#">复合材料</a></dd>
+                </dl>
+                <dl>
+                    <dt>价格</dt>
+                    <dd><a href="#">0-499</a></dd>
+                    <dd><a href="#">500-999</a></dd>
+                    <dd><a href="#">1000-1999</a></dd>
+                    <dd><a href="#">2000-3999</a></dd>
+                    <dd><a href="#">4000以上</a></dd>
+                    <dd class="price-form-dd">
+                        <form action="">
+                            <input class="input-text" name="price" type="text" placeholder="￥">
+                            <span>-</span>
+                            <input class="input-text" name="price" type="text" placeholder="￥">
+                            <input type="submit" style="display:none;">
+                        </form>
+                    </dd>
+                </dl>
+            </div>
+            <div class="selected-list">
+                <dl>
+                    <dt>已选条件</dt>
+                    <dd>Randon蓝盾 <i class="close"> <img width="8" height="8" src="./../../images/icon/icon-close.png" alt=""> </i> </dd>
+                    <dd>原木色<i class="close"> <img width="8" height="8" src="./../../images/icon/icon-close.png" alt=""> </i></dd>
+                    <dd>巴西玫瑰木<i class="close"> <img width="8" height="8" src="./../../images/icon/icon-close.png" alt=""> </i></dd>
+                </dl>
+            </div>
+
+            <a href="javascript:void(0);" id="switch" class="switch" data-off="0"><span class="text">收起</span><img width="14" height="14" src="./../../images/icon/icon-arrow2.png" alt=""></a>
+        </section>
+
+        <section class="hot-brand-wrap" style="display:none;">
+            <div class="wrap-top">
+                <h3>热门品牌</h3>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand1.gif" alt=""></div>
+                        <p class="name">Dove鸽子</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand2.gif" alt=""></div>
+                        <p class="name">Farida法丽达</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand3.gif" alt=""></div>
+                        <p class="name">S.Yairi艾斯雅依利</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand11.gif" alt=""></div>
+                        <p class="name">St.paul圣保罗</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand15.gif" alt=""></div>
+                        <p class="name">Tylanhua天音</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand18.gif" alt=""></div>
+                        <p class="name">Dunlop邓禄普</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand24.gif" alt=""></div>
+                        <p class="name">SAMCIK三益</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div  class="img"><img src="http://shop.guitarworld.com.cn/sitestyle/shop/images//brand/brand17.gif" alt=""></div>
+                        <p class="name">Adeline爱德琳</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="guitar-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://static.jishida.vip/upload/shop_list_pic_url/148803953492.jpg" alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/2815538636/TB1SECdFqmWBuNjy1XaXXXCbXXa_!!0-item_pic.jpg" alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://g-search1.alicdn.com/img/bao/uploaded/i4/i4/2094323899/TB2DkPUAHuWBuNjSszgXXb8jVXa_!!2094323899-0-item_pic.jpg   "
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i4/127915153/TB25on9XRsmBKNjSZFsXXaXSVXa_!!0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i1/123099861/TB2VBsWl0fJ8KJjy0FeXXXKEXXa_!!0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://g-search1.alicdn.com/img/bao/uploaded/i4/i3/2373517045/TB1z3jFegnH8KJjSspcXXb3QFXa_!!0-item_pic.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i4/16048147/TB2OubSkf6TBKNjSZJiXXbKVFXa_!!2-saturn_solar.png"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i3/59425047/TB2zSnXieGSBuNjSspbXXciipXa_!!0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i2/176610103214156139/TB2FJNGdXXXXXXxXpXXXXXXXXXX_!!10867661-0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i3/120025254/TB2sRe2w_tYBeNjy1XdXXXXyVXa_!!0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i2/43565643/TB25IJEfcnI8KJjSsziXXb8QpXa_!!0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i1/123099861/TB2VBsWl0fJ8KJjy0FeXXXKEXXa_!!0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://g-search1.alicdn.com/img/bao/uploaded/i4/i3/2373517045/TB1z3jFegnH8KJjSspcXXb3QFXa_!!0-item_pic.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i4/16048147/TB2OubSkf6TBKNjSZJiXXbKVFXa_!!2-saturn_solar.png"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img width="208" height="208" src="https://img.alicdn.com/imgextra/i3/59425047/TB2zSnXieGSBuNjSspbXXciipXa_!!0-saturn_solar.jpg"
+                            alt="">
+                        <p class="name text-ellipsis">Randon RG-540</p>
+                        <span class="price">¥ 6190</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    @layout(../../template/footer.html)
+</body>
+
+</html>

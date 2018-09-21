@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>曲谱详情</title>
+
+    @layout(../../template/head.html)
+</head>
+
+<body>
+
+    @layout(../../template/header.html)
+
+    <section class="main">
+       <h1 class="title">往后余生</h1>
+       <p class="author">王贰浪</p>
+
+       <section class="content-wrap clearfix">
+           <div class="fl content" id="content">
+                <img width="706" src="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=11e5eabd24f5e0fefa1581533d095fcd/241f95cad1c8a78628edafaa6e09c93d71cf504b.jpg" alt="">
+                <img width="706" src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=c6821a47f41f4134f43a0d2c4476feaf/060828381f30e924d8051b9545086e061c95f7f5.jpg" alt="">
+                <img width="706" src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=48a9006fbb99a9012f3853647cfc611e/0df3d7ca7bcb0a46a58657426863f6246b60af21.jpg" alt="">
+                <img width="706" src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C1%2C742%2C489%3Bc0%3Dbaike92%2C5%2C5%2C92%2C30/sign=368ba8da9ceef01f595b4285ddceb514/810a19d8bc3eb135b1fea605ae1ea8d3fd1f4456.jpg" alt="">
+            </div>
+           <div class="fl sidebar">
+               <div class="charge-box">
+                   <p class="tips">开通VIP，尊享所有曲谱高清 去广告下载</p>
+                   <button type="button" id="clickOpenVip" class="openvip-btn">开通VIP</button>
+               </div>
+
+               <div class="upload-user">
+                   <img class="fl img" width="50" height="50" src="http://p3.music.126.net/gK0nqK8iiG1o6axkHmmqrQ==/109951163416312552.jpg?param=50y50" alt="">
+                    <p class="name">蓝天绿树配白云</p>
+                </div>
+
+                <div class="change">
+                    <p class="date">上传时间：2017年10月18日</p>
+                    <p class="view-num">查看数：324522次</p>
+                    <div class="share">
+                        <span>分享至：</span>
+                        <a href="#"><img src="./../../images/icon/icon-QQ2.png" alt=""></a>
+                        <img class="wx-share" src="./../../images/icon/icon-wx2.png" alt="">
+                        <div class="wx-share-hover">
+                            <img src="./../../images/2018-08-02-1728244092.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="operation">
+                    <button type="button" class="collect" id="collect"> <img width="18" src="./../../images/icon/icon-collect-n.png" alt=""> 收藏</button>
+                    <button type="button"> <img width="18" src="./../../images/icon/icon-download.png" alt=""> 普通免费下载</button>
+                </div>
+                <p class="charge-tips">￥1.29 单首高清去广告下载</p>
+                <div class="wx-scanpay">    
+                    <img src="./../../images/1533193941.png" alt="">
+                    <p>微信扫码支付</p>
+                </div>
+
+                <div class="reading">
+                    <p>阅读模式</p>
+                    <button type="button" id="clickFullscreen"><img width="20" src="./../../images/icon/icon-fullscreen.png" alt=""> 全屏模式</button>
+                    <button type="button" id="clickdoublescreen"><img width="18" src="./../../images/icon/icon-doublescreen.png" alt=""> 双页模式</button>
+                </div>
+           </div>
+       </section>
+    </section>
+
+    @layout(../../template/footer.html)
+
+    <script type="text/template" id="modalTpl">
+        <div class="mask" ></div>
+        <section class="modal-popup" id="modalPopup">
+            <div class="modal-header">
+                <!-- <div class="yes-login">
+                    <img class="fl img" width="44" height="44" src="http://p3.music.126.net/gK0nqK8iiG1o6axkHmmqrQ==/109951163416312552.jpg?param=50y50" alt="">
+                    <p class="name">蓝天绿树配白云</p>
+                </div> -->
+                <div class="no-login">
+                    <p>您还没有登录，请先登录！</p>
+                    <a href="javascript:void(0);" class="clickLogin login-btn">立即登录</a>
+                </div>
+                
+                <img width="25" class="closeModal vip-close" src="./../../images/icon/icon-close2.png" alt="">
+            </div>
+            <div class="modal-main">
+                <p class="title">开通VIP，尊享所有曲谱高清去广告下载</p>
+                <div class="pay-mode" id="payMode">
+                    <div class="mode active" >
+                        <p class="price">¥ <strong>8</strong> /月</p>
+                        <p class="primary-price">¥ <strong>24</strong> /月</p>
+                        <p class="name">包月VIP会员</p>
+                        <img class="wxcode" src="./../../images/1533193941.png" alt="">
+                    </div>
+                    <div class="mode" data-src="./../../images/2018-08-02-1728244092.png">
+                        <p class="price">¥<strong>72</strong> /年</p>
+                        <p class="primary-price">¥<strong>178</strong> /年</p>
+                        <p class="name">包年VIP会员</p>
+                        <img class="wxcode" src="./../../images/2018-08-02-1728244092.png" alt="">
+                    </div>
+                </div>
+
+                <div class="wx-scanpay">
+                    <p>微信扫码支付</p>
+                    <img class="wxcode" id="wxCode" width="115" height="118" src="./../../images/2018-08-02-1728244092.png" alt="">
+                </div>
+            </div>
+        </section>
+    </script>
+    
+</body>
+
+</html>

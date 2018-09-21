@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>曲谱-搜索结果</title>
+
+    @layout(../../template/head.html)
+</head>
+
+<body>
+
+    @layout(../../template/header.html)
+
+    <section class="main">
+        <section class="search-wrap" id="searchWrap">
+            <div class="center">
+                <form>
+                    <input type="text" id="searchInput" class="search-input" placeholder="输入曲谱名称，如: 你就不要想起我…">
+                    <input type="submit" value="搜索" class="submit-search-btn">
+        
+                    <div class="search-box">
+                        <div class="history">最近搜索</div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>你就不要想</span>
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>你就不要想</span>
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>你就不要想</span>
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b>起我</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="search-res">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="img fl">
+                            <img src="http://p4.music.126.net/hXXvk23-nKzNUQpKe_neMA==/109951163406008264.jpg?param=120y120"
+                                width="120" height="120" alt="">
+                                <i class="label">自制</i>
+                        </div>
+                        <div class="info-box fl">
+                            <p class="name text-ellipsis">你就不要想起我</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img fl">
+                            <img src="http://p4.music.126.net/-v0Dt1PDyLC2LS24kZWCQw==/109951163417043309.jpg?param=120y120" width="120"
+                                height="120" alt="">
+                                <i class="label">自制</i>
+                        </div>
+                        <div class="info-box fl">
+                            <p class="name text-ellipsis">你就不要想起我C调简</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img fl">
+                            <img src="http://p3.music.126.net/XrZ6K9vaU-5Q3VbdlI0new==/109951163415564316.jpg?param=120y120" width="120" height="120"
+                                alt="">
+                                <i class="label">自制</i>
+                        </div>
+                        <div class="info-box fl">
+                            <p class="name text-ellipsis">你就不要想起我原版</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="search-no">
+            <p class="tips">暂无收录此数据～</p>
+            <button type="button" class="feedback-btn">缺谱反馈</button>
+        </div> -->
+    </section>
+
+    @layout(../../template/footer.html)
+</body>
+
+</html>
